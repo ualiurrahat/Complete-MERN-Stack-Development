@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>html advanced learning chapter 1</title>
+</head>
+
+<!-- use style= "margin = 0" on body to have no margin on the page -->
+
+<body>
+    <h1>Useful Tags</h1>
+    <!-- u and ins tag for underline tag -->
+    <p>u and ins tag for underline tag</p>
+    <u>This will be underlined with u tag</u><br>
+    <ins>This is also underlined with ins tag</ins><br>
+    <hr>
+    <!-- s and del tag for strikethrough -->
+    <p>s and del tag for strikethrough </p>
+    <s>1200 Tk</s><br>
+    <del>20000Tk</del>
+    <hr>
+    <p>Now using pre tag for predefined format in text.</p>
+    <!-- pre tag is used to print the text as same format as it was written  -->
+    <pre>Everybody is genius. But if you measure an elemphant thinking of how good it can fly,
+        then it will end up living a life
+         thinking itself as a failure
+    </pre>
+    <hr>
+
+    <p>we will write coding inside code tag. </p> <br>
+    <!-- we use code tag to write coding on html  -->
+    <!-- write the exact code inside a p tag and see the difference between them through inspect on browser  -->
+    <code>
+        #include <stdio.h>
+
+        int main()
+        {
+            int a = 10;
+            printf("%d\n", a);
+            returnn 0;
+        }
+    </code>
+    <hr>
+    now we will write the code inside pre tag to print the code with its format. <br>
+    <pre>
+        <code>
+            #include <stdio.h>
+    
+            int main()
+            {
+                int a = 10;
+                printf("%d\n", a);
+                returnn 0;
+            }
+        </code>
+    </pre>
+    <hr>
+    <!-- now will use q tag for quotation  -->
+    <p>using q tag for qoutation</p>
+    <q>One Day I will have the 11 figure salary. But may be I won't be happy as I used to be. </q>
+    <hr>
+    <p>now will use blockquote and cite tag for quotes and author's name</p>
+    <blockquote>Only a life lived for others is a life worthwhile <br>
+        <cite>-Albert Einstein</cite>
+    </blockquote>
+    <hr>
+    now will see the definition tag to define anything.
+    <p>
+        <dfn>Computer Science:</dfn>Computer science is the study of algorithmic processes and computational machines.
+        As a discipline, computer science spans a range of topics from theoretical studies of algorithms, computation
+        and information to the practical issues of implementing computing systems in hardware and software.
+
+    </p>
+
+    <hr>
+    <p>abbreviation and acronym tag</p>
+    <!-- html5 has dropped acronym tag in favour of abbr tag.  -->
+    <p> <abbr title="British Broadcasting Channel">BBC</abbr> is an international brand.</p>
+    <p>I don't give a shit about <acronym title="United States of America">USA.</acronym></p>
+    <hr>
+    <!-- address tag  -->
+    <p>Now using address tag</p>
+    <pre>
+         <address>
+             Tongi, Gazipur.
+             House 156/2, Dhaka Dyeing Road.
+             Bangladesh.
+         </address>
+     </pre>
+    <hr>
+    <!-- subscript and superscript tag  -->
+    log <sub>2</sub> 8 = 3.
+    <br>
+    x <sup>2</sup> + y <sup>2</sup> = r <sup>2</sup>
+    <hr>
+
+    <!-- small tag  -->
+    <p>using small tag</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet suscipit, nihil delectus, eius ab illo voluptates
+        repudiandae, laboriosam velit repellendus quisquam iure? Nesciunt odio quaerat suscipit voluptate nisi
+        cupiditate minus.
+        Provident ea qui sit? A eligendi ut ab dolor incidunt atque eos illo doloremque placeat, et repellat quas quae
+        velit enim sapiente sequi? Perferendis officia ut tenetur totam aut eius. <small> Fugiat blanditiis consequatur
+            earum hic eaque suscipit, corrupti ullam nostrum. Porro repudiandae, illum nobis reiciendis autem tempora
+            eum consectetur! Nisi distinctio eaque animi consequatur mollitia, nostrum sint? Consequuntur, ab rerum.
+            Ea, ratione perspiciatis. Eius hic quia repudiandae ipsam quod nihil delectus. Maxime molestias
+            exercitationem eum, laudantium dolores enim? Neque veritatis perspiciatis esse atque dolore quas beatae
+            omnis eligendi nam dolorum?</small>
+    </p>
+    <hr>
+    <!-- mark tag ....marks the text  -->
+    <p>mark tag</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos deleniti ratione placeat quia at similique
+        maxime suscipit quae vel odit aut <mark>
+            architecto perspiciatis possimus eligendi quos magnam repellendus corrupti, voluptatum cumque a rerum
+            blanditiis nam labore. Accusamus ipsam et tempore.
+
+
+        </mark>
+
+    </p>
+    <br>
+    <hr>
+    
+    <!-- bdo tag..bdo = bi-directional override ....rtl to ltr direction  -->
+    <p> <bdo dir="ltr">This is written in left to right direction</bdo> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, culpa!</p>
+
+    <p><bdo dir="rtl">This is rtl format </bdo> </p> ......above line is in rtl format
+    <hr>
+
+    <!-- center tag use  -->
+   <center> <h2>This is Center Tag</h2></center>
+   <p><center>This text will be in center</center></p>
+   <hr>
+
+   <!-- marquee tag.....moves texts from one side to another  -->
+
+   <p><marquee  direction="">Ahnaf</marquee></p>   <!--  by default right to left  -->
+   <p><marquee  direction="right">Ayash</marquee></p>
+   <p><marquee  direction="up">Arwaa</marquee></p>
+   <p><marquee  direction="down" >Arisha</marquee></p>
+
+   <hr>
+
+   <!-- defintion list tag.....  -->
+   <!-- dl = definition list, dd = definition description, dt = definition term.  -->
+   <p>definition tag using</p>
+   <dl>
+       <dt>Cricket</dt>
+       <dd>is a very famous game in Indian Sub continent</dd>
+       <dt>CSE</dt>
+       <dd>A viral subjet after this pandemic period.</dd>
+   </dl>
+   <hr>
+
+    <p>Now we will see img format!!</p>
+    <h2 style="margin-top: 10px; margin-right: 10px ; margin-bottom: 20px;">Source Unsplash....</h2>
+
+    <img src="https://source.unsplash.com/400x300/?nature,water" alt="""><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <br>
+    <hr>
+    
+</body>
+
+</html>
