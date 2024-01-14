@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+
+<body>
+    <h1>Job Application Form</h1>
+    <form>
+        <!-- name  -->
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name">
+        <br>
+        <br>
+        <!-- email  -->
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email">
+        <br><br>
+        <!-- telephone  -->
+        <label for="telephone">Mobile Number: </label>
+        <input type="tel" name="telephone" id="telephone">
+        <br><br>
+        <!-- resume  -->
+        <label for="resume">Resume: </label>
+        <br><br>
+        <input type="file" name="resume" id="resume">
+        <br><br>
+        <!-- experience  -->
+        <label for="experience">Experience(in years)</label>
+        <br><br>
+        <input type="number" name="experience" id="experience" min="0" max="50" value="0">
+        <br><br>
+        <!-- skills  -->
+        <fieldset>
+            <legend>Skills</legend>
+            <input type="checkbox" name="html" id="html">
+            <label for="html">HTML</label>
+            <br><br>
+            <input type="checkbox" name="css" id="css">
+            <label for="css">CSS</label>
+            <br><br>
+            <input type="checkbox" name="js" id="js">
+            <label for="js">Javascript</label>
+            <br><br>
+        </fieldset>
+        <br><br>
+        <!-- education  -->
+        <label for="education">Highest Education : </label>
+        <select name="education" id="education">
+            <option value="honours">B.Sc. Hons</option>
+            <option value="hsc">H.S.C</option>
+            <option value="ssc">S.S.C</option>
+        </select>
+        <br><br>
+        <!-- availability  -->
+        <label for="workType">Availability: </label>
+        <br><br>
+        <div id="workType">
+            <input type="radio" name="availability" id="partTime">
+            <label for="partTime">Part-time</label>
+            <input type="radio" name="availability" id="fullTime">
+            <label for="fullTime">Full-time</label>
+        </div>
+        <br>
+        <br>
+        <label for="comments">Additional Details</label>
+        <br>
+    <textarea name="comments" id="comments" cols="30" rows="10"></textarea><br>
+    <button>Submit Application</button>
+    </form>
+</body>
+
+</html>

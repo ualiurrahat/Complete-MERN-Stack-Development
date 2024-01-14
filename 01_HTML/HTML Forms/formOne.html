@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Regitration Form</title>
+</head>
+
+<body>
+    <form>
+        <h1>Event Registration</h1>
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name">
+        <br>
+        <br>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email">
+        <br><br>
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password">
+        <br><br>
+
+        <label for="occupation">Occupation: </label>
+        <select name="occupation" id="occupation">
+            <option value="" disabled selected hidden>Choose your option</option>
+            <option value="student">Student</option>
+            <option value="professional">Professional</option>
+            <option value="others">Others</option>
+        </select>
+
+
+        <fieldset>
+            <legend>Topic Of Interests</legend>
+            <label for="html">HTML</label>
+            <input type="checkbox" name="html" id="html">
+            <label for="css">CSS</label>
+            <input type="checkbox" name="css" id="css">
+            <label for="js">Javascript</label>
+            <input type="checkbox" name="js" id="js">
+        </fieldset>
+        <br><br>
+        <label for="comments">Comments: </label>
+        <br>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        <button>Register</button>
+    </form>
+</body>
+
+</html>
