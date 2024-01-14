@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-UA-Compatible" content="ie=edge">
+    <title>Multimedia Attchment in HTML</title>
+</head>
+
+<body>
+    <!-- video attachment....  -->
+    <!-- audio and video if not supported, than browser will move on to the nexe source
+         if there is multiple sources availbale...  -->
+    <h1>Mulitmedia Managing</h1>
+    <h2>Video</h2>
+    <video controls loop width="500" poster="https://source.unsplash.com/1600x900/?nature,water">
+        <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
+    </video>
+    <h2>Audio</h2>
+    <audio controls muted>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mp4">
+    </audio>
+
+
+
+
+    <h2>Embedding Youtube videos using iframe </h2>
+    <!-- select embed option from video(share button) and paste it on iframe src tag .....  -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2QR11oDukn4" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe><br><br>
+
+    <h2>iframe site</h2>
+    <br>
+    <iframe src="https://subscene.com/" frameborder="0" width="600" height="500"></iframe>
+
+    <h3>other tags</h3>
+    <div>
+        <h3>Progress</h3>
+        <progress max="100" value="45"></progress>progress up to 45%
+    </div>
+    <div>
+        <h3>meter</h3>
+        <meter min="0" max="200" value="80"></meter> 80 out of 200 is done
+    </div>
+    <div>
+        <h3>editable tags</h3>
+        <!-- real time text edits on browser....  -->
+        <p contenteditable="true">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum in corrupti minus. Earum, ad recusandae quia
+            neque odio totam quae vero nam iusto similique at expedita dolorem ex obcaecati autem!
+        </p>
+    </div>
+    <br>
+    <!-- sharing google maps with html5...  -->
+    <div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.542488248166!2d55.27437637712276!3d25.19719697699969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sBurj%20Khalifa!5e1!3m2!1sen!2sbd!4v1608643440849!5m2!1sen!2sbd"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+    </div>
+
+
+</body>
+
+</html>
