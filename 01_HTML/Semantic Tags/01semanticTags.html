@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Semantic Elements</title>
+
+    <style>
+        #header {
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        #navbar {
+            background-color: lightcoral;
+            padding: 6px;
+        }
+
+        #main-section {
+            background-color: lightgrey;
+            padding: 20px;
+        }
+
+        #section {
+            background-color: lightgreen;
+            padding: 16px;
+        }
+
+        .article {
+            background-color: lightseagreen;
+            padding: 7px;
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+
+<body style="margin: 0;">
+
+    <!-- header for entire page  -->
+    <header id="header">
+        <!-- using nav for writing the menus  -->
+        <nav id="navbar">
+            <span>Menu1</span>
+            <span>Menu2</span>
+            <span>Menu3</span>
+
+        </nav>
+    </header>
+
+    <!-- main is used after header -->
+    <main id="main-section">
+        <!-- now will create a section for the two article.  -->
+        <section id="section">
+            <article class="article">
+                <h3>Article One</h3>
+                <a href="/">Author</a>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque illo sint ad, corrupti accusamus,
+                    placeat tenetur voluptates modi praesentium pariatur adipisci amet eligendi eum quis reprehenderit
+                    alias ex et quas commodi sed animi deleniti vitae obcaecati. Eaque ut repellendus eum!</p>
+            </article>
+            <article class="article">
+                <h3>Article Two</h3>
+                <a href="/">Author Two</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae saepe ratione veniam nobis corrupti
+                    quod cum, omnis iusto doloremque autem suscipit recusandae in eos consequuntur! Quibusdam sequi
+                    minus tenetur ut?</p>
+            </article>
+
+
+        </section>
+
+    </main>
+    <!-- details tag doesn't work in ie  -->
+    <details>
+        <summary>
+            Roadmap To Be A Software Engineer.
+        </summary>
+        <ul>
+            <li>Intro to Computer</li>
+            <li>Structured Programming</li>
+            <li>Discrete Math</li>
+            <li>OOp</li>
+            <li>Computer Network</li>
+            <li>And So on</li>
+        </ul>
+    </details>
+    <footer>
+        &copy;2021;
+    </footer>
+
+</body>
+
+</html>
