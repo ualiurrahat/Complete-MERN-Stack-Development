@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Selectors</title>
+    <style>
+        /* There are 4 types of selectors in CSS: 
+        - element, id, class and grouped selectors. */
+
+        /* element selector */
+        p {
+            border: 2px solid violet;
+        }
+
+
+
+        /* id selector */
+        #firstPara {
+            color: green;
+        }
+
+        /* class selector */
+        .redElement {
+            color: red;
+        }
+
+        .bgYellow {
+            background-color: yellow;
+        }
+
+        /* grouping selector */
+        span,
+        footer {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>CSS Selectors</h3>
+    <p id="firstPara">This is simple paragraph to demonstrate how to use CSS Selectors and how it works</p>
+    <p id="secondPara" class="redElement bgYellow">This is number two paragraph to demonstrate how to use CSS Selectors
+        and how it works</p>
+
+    <div>
+        <p>This is number 3 paragraph inside a div block to demonstrate how to use CSS Selectors and how it works</p>
+        <span>This is a span element.</span>
+
+        <!-- will use grouping to add css into span and footer  -->
+
+    </div>
+
+
+
+    <footer>This is the footer </footer>
+
+</body>
+
+</html>
