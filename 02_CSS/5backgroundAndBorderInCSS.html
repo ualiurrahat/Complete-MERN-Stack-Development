@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #first {
+        background-color: yellow;
+        color: green;
+        width: 300px;
+        height: 100px;
+        /* border elements :
+             we can set border-width, border-style, border-color
+             like below:  */
+
+        /* border: 5px solid rgb(5,201,5);
+                      width   style    color
+             */
+        border-radius: 10px;
+        border-color: black;
+        border-style: solid;
+        /* border appears after border-style element is given */
+        border-width: 5px;
+        /* border thickness */
+      }
+
+      #second {
+        background-color: red;
+        color: white;
+        width: 300px;
+        height: 100px;
+
+        /* border elements */
+        border-top: 5px solid black;
+        border-bottom: 5px solid cyan;
+        border-left: 5px solid white;
+        border-right: 5px solid yellow;
+
+        /* border corner(radius) elements*/
+        border-top-left-radius: 10px;
+        border-top-right-radius: 18px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 30px;
+      }
+
+      #third {
+        width: 600px;
+        height: 500px;
+        /*background image elements */
+        background-image: url(https://source.unsplash.com/random/100x200);
+        border: 2px solid red;
+        /* image repetition elemenst*/
+        background-repeat: no-repeat;
+        /* repeat-x / repeat-y */
+        /* background-position:  center center ; */
+        /* background-position: center left; */
+        /* background-position: 150px 150px; */
+        /* background-position: center center; */
+        /* background-position: center left; */
+        /* background-position: center right; */
+        /* background-position: top right; */
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>This is first heading</h3>
+    <p id="first">HI I Am Rahat The brand</p>
+
+    <h3>This is second heading</h3>
+    <p id="second">I am a Full-Stack Web Developer</p>
+
+    <h3>This is third heading</h3>
+    <p id="third">I am learning CSS</p>
+  </body>
+</html>

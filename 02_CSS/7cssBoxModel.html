@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> CSS Box Model</title>
+
+    <style>
+        * {
+            /* * is the universal selector css  */
+            /* default box sizing for all containers  */
+            /* default margin padding. can be override  */
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* body css selectors  */
+        body {
+            background-color: blueviolet;
+        }
+
+        .container {
+            background-color: rgb(8, 188, 194);
+            border: 5px solid black;
+
+            /* padding, margin can be set for top,bottom,left,right  */
+            /*padding-left: 20px;
+            padding-bottom: 15px; */
+            /*padding: 40px;*/
+
+            /*padding / margin : top right bottom left */
+            /* padding:20px 25px 30px 35px;  */
+
+            /* padding/margin: y(top/bottom) x(left/right) */
+            padding: 30px 20px;
+            margin: 10px 15px;
+            border-radius: 20px;
+            /* margin and padding change the width. so to remain the width constant , use box sizing  */
+
+            width: 500px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h3>This is my heading 1</h3>
+        <p id="first">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore neque, delectus sunt corporis
+            accusantium aspernatur? Placeat dicta exercitationem quibusdam expedita dolor eius excepturi sapiente.
+            Doloribus!</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading 2</h3>
+        <p id="second">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore neque, delectus sunt corporis
+            accusantium aspernatur? Placeat dicta exercitationem quibusdam expedita dolor eius excepturi sapiente.
+            Doloribus!</p>
+    </div>
+
+
+    <div class="container">
+        <h3>This is my heading 3</h3>
+        <p id="third">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore neque, delectus sunt corporis
+            accusantium aspernatur? Placeat dicta exercitationem quibusdam expedita dolor eius excepturi sapiente.
+            Doloribus!</p>
+    </div>
+
+
+</body>
+
+</html>

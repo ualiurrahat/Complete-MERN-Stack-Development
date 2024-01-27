@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Units</title>
+    <style>
+      #div1 {
+        background-color: green;
+        width: 500px;
+        height: 100px;
+      }
+      #div2 {
+        background-color: red;
+        /* height and width will be relative to parent element  */
+        height: 50%;
+        width: 40%;
+      }
+      #para {
+        background-color: aqua;
+        height: 50vh;
+        width: 50vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">
+      <div id="div2"></div>
+    </div>
+    <p id="para">This is paragraph</p>
+  </body>
+</html>
