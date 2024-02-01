@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            margin: 16px 22px;
+            padding: 5px 39px;
+            background-color:burlywood;
+            color: black;
+            /* box-shadow: offset-x offsety color; */
+            /* box-shadow: offset-x offset-y blurr-radius color ; */
+            /* box-shadow: offset-x offset-y blurr-radius spread-radius color ; */
+
+             box-shadow: 5px 5px rgb(6, 192, 177); 
+            /* box-shadow: -10px -12px green; */
+            /* box-shadow: 10px 12px 15px green; */
+            /* box-shadow: 10px 12px 15px 10px green; */
+            /* box-shadow: 10px 12px 15px 10px rgb(9, 198, 204); */
+             /* box-shadow: 10px 12px 15px 20px rgba(9, 198, 204,2.5); */
+             /* box-shadow: inset 0px 51px green; */
+             /* box-shadow: 10px 12px red, 30px 36px green; */
+
+
+        }
+        .card h2
+        {
+            /* text-shadow: 3px 2px white; */
+            /* text-shadow: -3px -2px white; */
+            text-shadow: -3px -2px 2px white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>This  Is HTML Course</h2>
+            <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt cupiditate a eveniet quo
+                harum, nam architecto accusantium necessitatibus consequatur saepe, tempora consectetur inventore sed
+                quibusdam magnam, ab aperiam dolore dolores?</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>This  Is CSS Course</h2>
+            <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt cupiditate a eveniet quo
+                harum, nam architecto accusantium necessitatibus consequatur saepe, tempora consectetur inventore sed
+                quibusdam magnam, ab aperiam dolore dolores?</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>This  Is JS Course</h2>
+            <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt cupiditate a eveniet quo
+                harum, nam architecto accusantium necessitatibus consequatur saepe, tempora consectetur inventore sed
+                quibusdam magnam, ab aperiam dolore dolores?</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
