@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Dimensions Property</title>
+    <style>
+      #box {
+        border: 1px solid black;
+        /*content overflows content exceeds max-height
+        height shrinks if entire content is within the max-height */
+        max-height: 300px;
+        width: 300px;
+        overflow: auto;
+        margin: 10px;
+      }
+      #box2 {
+        border: 1px solid black;
+        /*height remains fixed if content is within the min-height
+        if content exceeds min-height, height increases to adjut the 
+        whole content*/
+        min-height: 100px;
+        width: 300px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Let's Explore CSS Dimensions Property</h1>
+    <h3>Exploring Max height, Min Height and Overflow</h3>
+    <div id="box">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+      possimus fugiat dolore magni officiis, consequuntur commodi temporibus
+      accusamus dicta aperiam asperiores voluptas nobis incidunt iure repellat
+      eumt esse veniam aperiam harum et. Repellendus reiciendis suscipit
+      voluptates modi id. Odio voluptatibus facere minima perspiciatis velit eos
+      omnis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
+      voluptatibus numquam sapiente culpa tem qui perferendis ex eligendi saepe,
+      mollitia veritatis iure autem velit, veniam laborum. Consectetur numquam
+      nisi repellendus? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Ab rerum nesciunt neque sit qui tempora non iusto excepturi officiis esse?
+    </div>
+    <div id="box2">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus totam
+      fugiat earum, provident nihil quas in dolorum? Lorem ipsum dolor sit, amet
+      consectetur adipisicing elit. Minus quaerat, voluptatibus id delectus
+      architecto dolore quo sit placeat. Labore, culpa?
+    </div>
+  </body>
+</html>
