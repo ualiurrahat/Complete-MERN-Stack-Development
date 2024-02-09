@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flexbox</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        border: 2px solid green;
+        height: 400px;
+        display: flex;
+        flex-direction: row; /*takes x axis as main axis */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        flex-wrap: nowrap;
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+        /* flex-flow: row-reverse nowrap; shorthand for flex-direction, flex wrap */
+        flex-flow: row wrap;
+        /* justify-content: flex-start; */
+        /* justify-content: flex-end; */
+        /* justify-content: center; */
+        justify-content: center;
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        /* align-items: center; */
+        /* align-items: stretch; */
+        /* align-items: baseline; */
+        align-items: center;
+        /* gap: 10px; */
+        /* align-content: flex-start; */
+        /* align-content: flex-end; */
+        /* align-content: center; */
+        /* align-content: space-around; */
+        /* align-content: space-between; */
+        align-content: flex-start;
+      }
+      .box {
+        border: 1px solid orange;
+        background-color: aqua;
+        width: 150px;
+        /* flex item properties  */
+        /* flex-grow: 1; */
+        /* flex-basis: 100px; */
+        flex-basis: 50%;
+      }
+      #box-1 {
+        order: 1;
+        /* flex-grow: 4; showing more growth than other box */
+        /* flex-shrink: 3; */
+        /* align-self: flex-start; */
+      }
+      #box-2 {
+        order: 2;
+      }
+      #box-3 {
+        order: 3;
+        /* flex-shrink: 2; will shrink in less speed than box-1 */
+        /* align-self: stretch; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box-1">box-1</div>
+      <div class="box" id="box-2">box-2</div>
+      <div class="box" id="box-3">box-3</div>
+      <div class="box" id="box-4">box-4</div>
+    </div>
+  </body>
+</html>
