@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            height: 500px;
+            width: 100%;
+            /* initialize the container as a flex box  */
+            display: flex;
+            /* flex box properties for flex containers  */
+
+
+            /* flex-direction: row; */
+            /*(by default value is row ) */
+            /* flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+
+            /* flex-wrap: wrap; */
+            /*  default is nowrap  */
+            /* flex-wrap: wrap-reverse; */
+
+            /* shorthand for flex-direction: and flex-wrap:  
+            flex-flow: flex-direction flex-wrap */
+            /* flex-flow: row wrap; */
+
+            /* justifying position of elements horizontally  */
+
+            /* justify-content: center;          */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+
+            /* justifying content in vertical direction   */
+            /* align-items: center; */
+            /* align-items: flex-end;
+            align-items: flex-start;
+            align-items: stretch;  needs flex-direction: wrap to work properly */
+
+        }
+
+        .box-class {
+            background-color: tomato;
+            margin: 10px;
+            padding: 5px;
+            height: 150px;
+            width: 150px;
+            border: 2px solid green;
+        }
+
+        #box1 {
+            /* order: higher the order, the later it shows up in the container.    */
+            order: 3;
+
+            /* increase size of box with containers size getting changed  */
+            /* flex-grow: 3; */
+
+            /* decrease size of box with containers size getting decreased  */
+            /* flex-shrink: 3; */
+            /* Notes: dont use flex-grow and flex-shrink on containers.
+            use them on individual elements */
+
+            flex-basis: 40px;
+            /* when flex-direction is set to row, flex-basis will control width
+            when flex-direction is set to column, flex-basis will control height */
+
+            /* flex shorthand-> flex: flex-grow flex-shrink flex-basis */
+
+            /* align-self: flex-end; */
+        }
+
+        #box2 {
+            order: 40;
+        }
+
+        #box3 {
+            /* order: 1; */
+            flex-shrink: 2;
+
+        }
+
+        #box5 {
+            flex: 3 2 300px;
+        }
+
+        #box6 {
+            align-self: flex-end;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- FlexBox is a one-dimensional layout method for laying out items
+    in rows or columns
+    CSS flexbox is a better way to align items into a container 
+    flexbox = flexible + box  -->
+    <div class="container">
+        <div class="box-class" id="box1">First Box</div>
+        <div class="box-class" id="box2">Second Box</div>
+        <div class="box-class" id="box3">Third Box</div>
+        <div class="box-class" id="box4">Fourth Box</div>
+        <div class="box-class" id="box5">Fifth Box</div>
+        <div class="box-class" id="box6">Sixth Box</div>
+    </div>
+</body>
+
+</html>
