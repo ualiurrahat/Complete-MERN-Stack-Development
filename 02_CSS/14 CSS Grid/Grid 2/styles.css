@@ -1,0 +1,24 @@
+#container {
+  background-color: brown;
+  height: 400px;
+  display: grid;
+  gap: 10px;
+  border: 2px solid black;
+  grid-template-columns: 150px 1fr 1fr 150px;
+  grid-template-rows: 20px 1fr 30px;
+}
+.box {
+  background-color: aqua;
+  /* height: 80px; */
+  /* width: 80px; */
+  text-align: center;
+}
+#box-1,
+#box-4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+#box-3 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
