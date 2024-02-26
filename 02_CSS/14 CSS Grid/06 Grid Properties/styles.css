@@ -1,0 +1,58 @@
+.container {
+  border: 1px solid brown;
+  background-color: yellow;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
+  gap: 10px;
+  height: 600px;
+  width: 600px;
+
+  /* justify-content: start;
+  justify-content: end;
+  justify-content: center;
+  justify-content: space-around;
+  justify-content: space-evenly;
+  justify-content: space-between; */
+
+  /* align-content: start;
+  align-content: end;
+  align-content: stretch;
+  align-content: baseline;
+  align-content: space-around; */
+
+  /* align-content: center;
+  align-content: space-around;
+  align-content: space-evenly;
+  align-content: space-between; */
+  /* align-content: start; */
+
+  /* place-content: shorthand for justify-content,align-content; */
+  /* justify-content: center;
+  align-content: center; 
+  place-content:center, will achieve the same as the above two properties*/
+  /* place-content: center; */
+
+  /* place-items: shortahand for align-items,justify-items; */
+  /* align-items: center;
+  justify-items: center; 
+  place-items:center; will achieve same as above two properties*/
+
+  place-items: center;
+}
+.box {
+  border: 1px solid red;
+  background-color: aqua;
+}
+/* grid item properties  */
+#box-1 {
+  /* justify-self: start;
+  justify-self: end;
+  justify-self: center;
+  justify-self: baseline; */
+
+  /* align-self: end;
+  align-self: center;
+  align-self: start;
+  align-self: stretch; */
+}
