@@ -1,0 +1,74 @@
+/* universal styles  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.container {
+  height: 100%; /*will take same height as wrapper */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.container h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 30px 0;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card {
+  width: 32%;
+  /* we need to overlap figcaption text with fig image  */
+  /* to do so, figcaption's nearest ancestor positon should be non-static  */
+  /* so here, we applied relative position to card  */
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  box-shadow: 0 0 20px #333;
+}
+.card:hover {
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 20px #333);
+  transition: 0.3s;
+}
+.card:hover img {
+  filter: grayscale(0%);
+}
+
+.card figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px;
+  width: 100%;
+  height: 20%;
+  font-weight: 500;
+  color: #fff;
+  opacity: 0; /*means caption will be hidden normally */
+  border-radius: 0px 0px 10px 10px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5) 0% rgba(255, 255, 255, 0) 100%
+  );
+  transition: 0.3s;
+}
+.card:hover figcaption {
+  opacity: 1;
+  transform: scale(1.03);
+}
