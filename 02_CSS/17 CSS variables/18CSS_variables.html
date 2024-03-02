@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        /* declaring global variable inside root  */
+        :root{
+            --primary-color:blue;
+            --danger-color:red;
+            --maxw:230px;
+        }
+        .container {
+            display: flex;
+            background-color: var(--danger-color);
+            max-width: var(--maxw);
+             align-items: center;
+            justify-content: center; 
+            margin: auto;
+            /* max-width is very small. so content will not to center if we dont use margin auto ; */
+        }
+
+        .box {
+            /* local variable  */
+            /* --box-color: blue; */
+            height: 150px;
+            width: 150px;
+            background-color: var(--primary-color);
+            margin: 2px 10px;
+            border: 2px solid red;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
