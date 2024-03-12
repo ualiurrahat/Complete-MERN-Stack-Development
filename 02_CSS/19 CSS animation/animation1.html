@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation & Keyframes</title>
+    <style>
+        body {
+            margin: 0;
+            
+        }
+
+        .container {
+            background-color: greenyellow;
+        }
+
+        .box {
+            background-color: green;
+            height: 200px;
+            width: 200px;
+            position: relative;
+            /* box will not move without position being changed.  */
+            /* animation-name: rahat1; */
+            animation-name: rahat2;
+            /* animation does not work without animation duration  */
+            animation-duration: 4s;
+
+            /* animation-iteration-count: 3; */
+            /* animation-iteration-count: infinite ; */
+
+            /* animation-fill-mode: forwards; */
+            /* animation-fill-mode: backwards; */
+
+            /* animation-timing-function: ease-in; */
+            /* animation-timing-function: ease-out; */
+            /* animation-timing-function: ease-in-out; */
+
+            /* animation-direction: reverse; */
+
+            /* animation-delay: 3s; */
+
+            /* this properties can be set using short-hand */
+            /* animation: rahat1 2s easein 3s 3 reverse forwards;  */
+
+        }
+
+        @keyframes rahat1 {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 1200px;
+            }
+
+        }
+
+        @keyframes rahat2 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 200px;
+                left: 0px;
+            }
+
+
+            50% {
+                top: 200px;
+                left: 200px;
+            }
+
+            75% {
+                top: 0px;
+                left: 200px;
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is animation box
+        </div>
+    </div>
+</body>
+
+</html>
