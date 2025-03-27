@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>ID and Class in html</html></title>
-</head>
-<body>
-    <h3>IDs and classes in html </h3>
+    <style>
+      .redBg {
+        background-color: red;
+      }
+      .blackBorder {
+        border: 2px solid black;
+      }
+      #mainBox {
+        height: 200px;
+        width: 100px;
+      }
+      .mycls1 {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>IDs and classes in html</h3>
     <!-- id means identifier. ids are unique. two ids cant have the same name -->
     <!-- an id can have as many  class it wants -->
     <!-- a class can be provided to multiple elements -->
     <!-- an element can have multiple classes -->
-    <div id="mainBox" class="redBg blackBorder">
-        this is mainbox
-    </div>
-    <span class="redBg">   </span>
+    <div id="mainBox" class="redBg blackBorder">this is mainbox</div>
+    <span class="redBg"> </span>
     <!-- emmet -->
-     <!-- . is for class and # is for id -->
-     <!-- ex: span.redBg will create the follwoing line -->
-     <span class="redBg"></span>
-     <!-- ex: span#myid will create the following line -->
-     <span id="myid"></span>
-     <!-- div.redBg.blackBorder.anotherClass will create the following line -->
-     <div class="redBg blackBorder anotheClass"></div>
-     <!-- Emmet takes div tag as default -->
-     <!-- .blackBorder will create the following code line. -->
-     <div class="blackBorder"></div>
-     <!-- creating multiple element using emmet  -->
-     <!-- span.mycls1.mycls2.mycls3*4 ...... (to print 4 similar elements using emmet) -->
-     <span class="mycls1 mycls2 mycls3">First</span>
-     <span class="mycls1 mycls2 mycls3">Second</span>
-     <span class="mycls1 mycls2 mycls3">Third</span>
-     <span class="mycls1 mycls2 mycls3">Fourth</span>
-
-</body>
+    <!-- . is for class and # is for id -->
+    <!-- ex: span.redBg will create the follwoing line -->
+    <span class="redBg"></span>
+    <!-- ex: span#myid will create the following line -->
+    <span id="myid"></span>
+    <!-- div.redBg.blackBorder.anotherClass will create the following line -->
+    <div class="redBg blackBorder anotheClass"></div>
+    <!-- Emmet takes div tag as default -->
+    <!-- .blackBorder will create the following code line. -->
+    <div class="blackBorder"></div>
+    <!-- creating multiple element using emmet  -->
+    <!-- span.mycls1.mycls2.mycls3*4 ...... (to print 4 similar elements using emmet) -->
+    <span class="mycls1 mycls2 mycls3">First</span>
+    <span class="mycls1 mycls2 mycls3">Second</span>
+    <span class="mycls1 mycls2 mycls3">Third</span>
+    <span class="mycls1 mycls2 mycls3">Fourth</span>
+  </body>
 </html>
