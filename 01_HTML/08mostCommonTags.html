@@ -80,6 +80,7 @@
     <!-- html5 has dropped acronym tag in favour of abbr tag.  -->
     <p> <abbr title="British Broadcasting Channel">BBC</abbr> is an international brand.</p>
     <p>I don't give a shit about <acronym title="United States of America">USA.</acronym></p>
+    <p>Use of &lt;acronym&gt; is deprecated now. Instead use &lt;abbr&gt; tag.</p>
     <hr>
     <!-- address tag  -->
     <p>Now using address tag</p>
@@ -92,6 +93,7 @@
      </pre>
     <hr>
     <!-- subscript and superscript tag  -->
+     <p>superscript and subscript tag </p>
     log <sub>2</sub> 8 = 3.
     <br>
     x <sup>2</sup> + y <sup>2</sup> = r <sup>2</sup>
@@ -117,8 +119,6 @@
         maxime suscipit quae vel odit aut <mark>
             architecto perspiciatis possimus eligendi quos magnam repellendus corrupti, voluptatum cumque a rerum
             blanditiis nam labore. Accusamus ipsam et tempore.
-
-
         </mark>
 
     </p>
@@ -128,7 +128,7 @@
     <!-- bdo tag..bdo = bi-directional override ....rtl to ltr direction  -->
     <p> <bdo dir="ltr">This is written in left to right direction</bdo> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, culpa!</p>
 
-    <p><bdo dir="rtl">This is rtl format </bdo> </p> ......above line is in rtl format
+    <p><bdo dir="rtl">tamrof ltr si sihT</bdo> </p> ......above line is in rtl format
     <hr>
 
     <!-- center tag use  -->
@@ -155,28 +155,53 @@
        <dd>A viral subjet after this pandemic period.</dd>
    </dl>
    <hr>
+<p>Show time in HTML </p>
+   <p>The reservations are for <time datetime="20:00">20:00 </time></p>
+   <!-- The datetime attribute is used to translate dates and times into a machine-readable format.
 
-    <p>Now we will see img format!!</p>
-    <h2 style="margin-top: 10px; margin-right: 10px ; margin-bottom: 20px;">Source Unsplash....</h2>
+This is important, because it helps with search engine results and helps the browser process date and time information more effectively. -->
 
-    <img src="https://source.unsplash.com/400x300/?nature,water" alt="""><br>
+   <!-- The value for the datetime attribute must be either a valid year, valid month, valid time, local date, global date, or valid duration string -->
+   <p>
+     The graduation will be on <time datetime="2024-06-15T15:00">June 15</time>
+   </p>
+   <!-- The first part of that value is the year, month and day. The capital T in
+   the value is a separator between the date and time. -->
 
+   <!-- The fifteen hundred hours would be three PM in the afternoon. -->
 
-
-
-
-
-
-
-
-
-
-
-
+<hr>
 
 
-    <br>
-    <hr>
+
+<p>U element</p>
+
+<p>
+  <!-- The unarticulated annotation element, or u element for short, is used to represent inline text that has non-textual annotation applied. -->
+  You can use the unarticulated annotation element to highlight
+  <u>inccccort</u> <u>spling</u> <u>issses</u>.
+  <!-- In HTML4, the u element was used for styling purposes. But in HTML5, the u element should only be used to indicate that text has non-textual annotation applied. -->
+</p>
+<hr />
+<p>ruby element</p>
+<!-- The ruby element represents small text shown above or below the main text. It is typically used to show the pronunciation of East Asian characters. -->
+<ruby> 明日 <rp>(</rp><rt>Ashita</rt><rp>)</rp> </ruby>
+<!-- The rp element, or ruby fallback parenthesis element, is used as a fallback for browsers lacking support for displaying ruby annotations.
+
+The rt element, or ruby text element, is used to indicate text for the ruby annotation. This text is usually used for pronunciation, or translation details in East Asian typography.
+
+While the ruby element can be used for other types of annotations, the most common use case is for East Asian typography.
+
+-->
+<hr />
+
+
+
+
+
+
+
+
     
 </body>
 
