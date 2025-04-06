@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Pro Coder Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <input type="text" id="name" required placeholder="enter your name" />
+      <br />
+      <label for="email" id="email-label">Email</label>
+      <input id="email" type="email" required placeholder="example@gmail.com" />
+      <br />
+      <label for="number" id="number-label">Age</label>
+      <input type="number" id="number" min="18" max="60" placeholder="eg:25" />
+      <br />
+      <label for="dropdown">What is your current goal to learn?</label>
+      <select id="dropdown">
+        <option value="web-dev">Web Development</option>
+        <option value="dsa-learn">Data Structures & Algorithms</option>
+        <option value="cp-learn">Competitive Programming</option>
+        <option value="core-cs">Core Concepts</option>
+      </select>
+      <br />
+      <p>Are you enrolled in any of Pro Coder paid courses?</p>
+
+      <input type="radio" name="paid-course" id="enroll-no" value="no" />
+      <label for="enroll-no">NO</label><br />
+
+      <input type="radio" name="paid-course" id="enroll-yes" value="yes" />
+      <label for="enroll-yes">YES</label><br />
+
+      <input
+        type="radio"
+        name="paid-course"
+        id="enroll-future"
+        value="future"
+      />
+      <label for="enroll-future">Interested in future</label><br />
+
+      <p>What would you like to see improved? (Check all that apply)</p>
+
+      <input
+        type="checkbox"
+        id="backend"
+        value="backend-project"
+        name="improve"
+      />
+      <label for="backend">Back-end Projects</label><br />
+      <input
+        type="checkbox"
+        id="frontend"
+        value="frontend-project"
+        name="improve"
+      />
+      <label for="frontend">Front-end Projects</label><br />
+      <input
+        type="checkbox"
+        id="machine"
+        value="machine-project"
+        name="improve"
+      />
+      <label for="machine">Machine Learning Projects</label><br />
+      <input
+        type="checkbox"
+        id="digital"
+        value="digital-marketing"
+        name="improve"
+      />
+      <label for="digital">Digital Marketing Course</label><br />
+      <input type="checkbox" id="smm" value="smm" name="improve" />
+      <label for="smm">Social Media Management</label><br />
+
+      <p>Your Comments or suggestions:</p>
+      <textarea placeholder="enter your text" cols="20" rows="10"></textarea
+      ><br />
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
