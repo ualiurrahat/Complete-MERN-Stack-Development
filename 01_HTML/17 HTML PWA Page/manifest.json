@@ -1,0 +1,37 @@
+{
+    "name": "Web App Manifest Demo",
+    "short_name": "ManifestDemo",
+    "theme_color": "red",
+    "background_color": "silver",
+    "start_url": "./",
+    "id": "demo-1",
+    "display": "standalone",
+    "scope": "./",
+    "icons": [
+       {
+          "src": "https://cdn.glitch.me/248b0d2d-8ab9-4407-a073-136440ab3556/icon.png?v=1640879741758",
+          "type": "image/png",
+          "sizes": "512x512"
+       },
+       {
+          "src": "ihttps://cdn.glitch.me/248b0d2d-8ab9-4407-a073-136440ab3556/icon.png?v=1640879741758",
+          "type": "image/png",
+          "sizes": "512x512"
+          
+       }
+     ],
+     "description": "This is a long text that can describe what your PWA does to the user",
+     "categories": ["games", "education"],
+     "screenshots": [
+       {
+          "src": "https://cdn.glitch.me/248b0d2d-8ab9-4407-a073-136440ab3556/icon.png?v=1640879741758?1",
+          "type": "image/png",
+          "sizes": "512x512"
+       },
+       {
+          "src": "https://cdn.glitch.me/248b0d2d-8ab9-4407-a073-136440ab3556/icon.png?v=1640879741758?2",
+          "type": "image/png",
+          "sizes": "512x512"
+       }
+     ]
+  }
