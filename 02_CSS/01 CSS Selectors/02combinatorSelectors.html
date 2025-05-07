@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More On CSS Selectors</title>
+    <style>
+      h1 {
+        background-color: red;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      /* any p within a div  */
+      /* div  p {
+            background-color: green;
+            font-weight: bold;
+            color: yellow;
+        } */
+
+      /* p contained by any li within a div  */
+      div li p {
+        background-color: cyan;
+        font-weight: bold;
+        color: black;
+      }
+
+      /*
+      > (Child combinator)
+      → Targets elements that are direct children of a parent.
+      → Example: div > p — selects a <p> that is directly inside a <div>.
+          */
+      div > p {
+        /*selects <p> elements that are direct children of a <div>
+        <p> is inside <div> and direcly nested, not further down in nested elements*/
+        background-color: green;
+        font-weight: bold;
+        color: yellow;
+      }
+      /* + (Adjacent sibling combinator)
+        → Targets the next sibling element immediately after a given element.
+        → Example: div + p — selects a <p> that is right after a <div> (same parent). */
+      div + p {
+        /* <p> must be right after the closing </div>, not inside it, and no other element should be between them.  */
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>This is more on CSS Selectors</h1>
+    <div class="container">
+      <ul>
+        <li>
+          <p>This is paragraph inside ul within a div</p>
+        </li>
+        <li>this will not get affected. check out why</li>
+      </ul>
+      <div class="row">
+        <p>This is a paragraph</p>
+      </div>
+      <p>This is another paragraph</p>
+    </div>
+    <!--<p>This is outer most paragraph</p> got styled because:
+    It is immediately after a <div> (i.e., .container).
+    It shares the same parent as the <div> — in this case, the <body>.
+    Therefore, it matches the div + p selector.-->
+    <p>This is outer most paragraph</p>
+  </body>
+</html>

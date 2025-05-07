@@ -1,0 +1,13 @@
+body {
+  background-image: url(images.png);
+  background-repeat: no-repeat;
+  height: 100vh;
+  /* background-repeat: repeat-x; */
+  /* background-repeat: repeat-y; */
+  background-position: center center;
+
+  background-position: center center;
+  background-position: center right;
+  background-position: top right;
+  background-position: 150px 150px;
+}

@@ -1,91 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>nth Child Pseudo Selectors</title>
     <style>
-        .container {
-            display: block;
-            margin: auto;
-            width: 200px;
+      .container {
+        display: block;
+        margin: auto;
+        width: 200px;
+      }
 
-        }
+      /* ========================
+   Form Input Styles
+======================== */
 
-        input {
-            display: block;
+      /* Make all input fields block-level for better layout control */
+      input {
+        display: block;
+      }
 
-        }
+      /* Style for text input fields */
+      input[type="text"] {
+        border: 2px solid red;
+        padding: 20px;
+      }
 
-        input[type='text'] {
-            border: 2px solid red;
-            padding: 20px;
-        }
+      /* Style for email input fields */
+      input[type="email"] {
+        border: 6px solid black;
+        color: yellow;
+      }
 
-        a[target] {
-            color: cyan;
+      /* ========================
+   Anchor Tag Styles
+======================== */
 
-        }
+      /* Style all anchor tags that include a 'target' attribute */
+      a[target] {
+        color: cyan;
+      }
 
-        a[target='_self'] {
-            font-size: 50px;
-            color: black;
-            background-color: yellow;
-        }
+      /* Specific style for anchor tags that open in the same tab */
+      a[target="_self"] {
+        font-size: 50px;
+        color: black;
+        background-color: yellow;
+      }
 
-        input[type='email'] {
-            border: 6px solid black;
-            color: yellow;
+      /* ========================
+   List Item Styles
+======================== */
 
-        }
+      /* Style only the third list item */
+      li:nth-child(3) {
+        color: cyan;
+      }
 
-        /* applying CSS on li elements */
-        li:nth-child(3) {
-            color: cyan;
+      /* Style odd-numbered list items (1st, 3rd, 5th, etc.) */
+      li:nth-child(odd) {
+        background-color: yellow;
+      }
 
-        }
+      /* Style even-numbered list items (2nd, 4th, 6th, etc.) */
+      li:nth-child(even) {
+        background-color: red;
+      }
 
-        li:nth-child(odd) {
-            background-color: yellow;
-        }
-
-        li:nth-child(even) {
-            background-color: red;
-        }
-
-        /* li:nth-child(2n+0) {
+      /* li:nth-child(2n+0) {
             background-color: red;
         } */
-        /* n starts from 0  */
+      /* n starts from 0  */
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <h1><a href="https://google.com" target="_blank">Go to Google</a></h1>
-        <h1><a href="https://facebook.com" target="_self">Go To facebook</a></h1>
-        <form action="" class="form-class">
-            <input type="text" placeholder="Enter your name">
-            <input type="email" placeholder="Enter your mail:">
-            <input type="password" placeholder="Enter your password">
-            <input type="submit" value="Submit">
-
-        </form>
-        <ul>
-            <li class="item" id="item1">item1</li>
-            <li class="item" id="item2">item2</li>
-            <li class="item" id="item3">item3</li>
-            <li class="item" id="item4">item4</li>
-            <li class="item" id="item5">item5</li>
-            <li class="item" id="item6">item6</li>
-            <li class="item" id="item7">item7</li>
-            <li class="item" id="item8">item8</li>
-            <li class="item" id="item9">item9</li>
-            <li class="item" id="item10">item10</li>
-        </ul>
+      <h1><a href="https://google.com" target="_blank">Go to Google</a></h1>
+      <h1><a href="https://facebook.com" target="_self">Go To facebook</a></h1>
+      <form action="" class="form-class">
+        <input type="text" placeholder="Enter your name" />
+        <input type="email" placeholder="Enter your mail:" />
+        <input type="password" placeholder="Enter your password" />
+        <input type="submit" value="Submit" />
+      </form>
+      <ul>
+        <li class="item" id="item1">item1</li>
+        <li class="item" id="item2">item2</li>
+        <li class="item" id="item3">item3</li>
+        <li class="item" id="item4">item4</li>
+        <li class="item" id="item5">item5</li>
+        <li class="item" id="item6">item6</li>
+        <li class="item" id="item7">item7</li>
+        <li class="item" id="item8">item8</li>
+        <li class="item" id="item9">item9</li>
+        <li class="item" id="item10">item10</li>
+      </ul>
     </div>
-</body>
-
+  </body>
 </html>

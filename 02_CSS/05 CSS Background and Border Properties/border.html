@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Border Properties</title>
+    <style>
+      /* Base styling for all boxes */
+      .box {
+        width: 200px;
+        height: 80px;
+        margin: 20px;
+        padding: 10px;
+        text-align: center;
+        line-height: 60px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+      }
+
+      /* Solid border */
+      .solid {
+        border: 4px solid #4caf50;
+      }
+
+      /* Dashed border */
+      .dashed {
+        border: 4px dashed #f44336;
+      }
+
+      /* Dotted border */
+      .dotted {
+        border: 4px dotted #2196f3;
+      }
+
+      /* Double border */
+      .double {
+        border: 6px double #ff9800;
+      }
+
+      /* Groove border - gives 3D grooved effect */
+      .groove {
+        border: 6px groove #9c27b0;
+      }
+
+      /* Ridge border - gives 3D ridged effect */
+      .ridge {
+        border: 6px ridge #3f51b5;
+      }
+
+      /* Inset border - makes the element look embedded */
+      .inset {
+        border: 6px inset #009688;
+      }
+
+      /* Outset border - makes the element look like it's coming out */
+      .outset {
+        border: 6px outset #ff5722;
+      }
+
+      /* Rounded border using border-radius */
+      .rounded {
+        border: 4px solid #000;
+        border-radius: 15px;
+      }
+
+      /* Circle border using border-radius on a square box */
+      .circle {
+        width: 100px;
+        height: 100px;
+        border: 4px solid #333;
+        border-radius: 50%;
+        line-height: 100px;
+        margin: 20px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>CSS Border Properties</h2>
+
+    <!-- Examples of different border styles -->
+    <div class="box solid">Solid Border</div>
+    <div class="box dashed">Dashed Border</div>
+    <div class="box dotted">Dotted Border</div>
+    <div class="box double">Double Border</div>
+    <div class="box groove">Groove Border</div>
+    <div class="box ridge">Ridge Border</div>
+    <div class="box inset">Inset Border</div>
+    <div class="box outset">Outset Border</div>
+    <div class="box rounded">Rounded Border</div>
+    <div class="circle">Circle</div>
+  </body>
+</html>

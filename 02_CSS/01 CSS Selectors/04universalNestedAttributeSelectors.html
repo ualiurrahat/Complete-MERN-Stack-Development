@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selector Examples</title>
+    <style>
+      /* ========================
+       Universal Selector
+    ========================= */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      /* ========================
+       Nested Selectors
+    ========================= */
+
+      /* Style paragraphs only when they are inside a div */
+      div p {
+        color: teal;
+        font-size: 18px;
+        padding: 10px;
+        background-color: #f0f0f0;
+      }
+
+      /* Nested span inside paragraph */
+      div p span {
+        font-weight: bold;
+        color: darkred;
+      }
+
+      /* ========================
+       Attribute Selectors
+    ========================= */
+
+      /* Style all input fields that have a 'type' attribute */
+      input[type] {
+        padding: 10px;
+        margin: 10px 0;
+        border: 2px solid gray;
+      }
+
+      /* Style only input fields of type 'email' */
+      input[type="email"] {
+        border-color: green;
+        background-color: #eaffea;
+      }
+
+      /* Style only links that open in a new tab */
+      a[target="_blank"] {
+        color: blue;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Selector Demo</h1>
+
+    <!-- Nested selector demo -->
+    <div>
+      <p>
+        This is a paragraph inside a div. <span>Nested span inside it</span>
+      </p>
+      <p>Another paragraph inside a div.</p>
+    </div>
+
+    <p>
+      This paragraph is outside the div and not styled by the nested selector.
+    </p>
+
+    <!-- Attribute selector demo -->
+    <form>
+      <label>Email:</label>
+      <input type="email" placeholder="Enter your email" /><br />
+
+      <label>Username:</label>
+      <input type="text" placeholder="Enter your username" /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <!-- Attribute selector for anchor tag -->
+    <p>
+      <a href="https://example.com" target="_blank"
+        >External Link (opens in new tab)</a
+      ><br />
+      <a href="about.html" target="_self">Internal Link (same tab)</a>
+    </p>
+  </body>
+</html>

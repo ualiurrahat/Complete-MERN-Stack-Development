@@ -1,43 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Colors in CSS</title>
     <style>
-        /* we can use colors usually in 3 ways
-        color by name: red, green: . . . .
-        color by rgb code
-        color by hexa code
-        other ways:
-        RGBA color
-        HSL color
-        HSLA color
-         */
-        #ahnaf {
-            color: red;
-            /*color by name */
-        }
+      /* ==========================
+         CSS Color Examples
+      ============================ */
 
-        #arwa {
-            color: rgba(20, 93, 202, 0.473);
-            /*color by rgb code */
-        }
+      /* Color by name */
+      #ahnaf {
+        color: red;
+        /* The color "red" is a predefined color name in CSS */
+      }
 
-        #ayash {
-            color: #dbcf1d;
-            /*color by hexa code */
-        }
+      /* Color by rgba code (Red, Green, Blue, Alpha transparency) */
+      #arwa {
+        color: rgba(20, 93, 202, 0.473);
+        /* rgba() specifies colors with red, green, blue values and an alpha channel
+           (Alpha represents transparency; 0 = fully transparent, 1 = fully opaque) */
+      }
+
+      /* Color by hexadecimal (Hex) code */
+      #ayash {
+        color: #dbcf1d;
+        /* Hexadecimal color code starts with '#' followed by 6 characters.
+           Here, dbcf1d is a mix of Red, Green, and Blue components. */
+      }
+
+      /* Color by RGB (Red, Green, Blue) */
+      #nashit {
+        color: rgb(13, 25, 213);
+        /* RGB color is defined by the combination of Red, Green, and Blue values,
+           ranging from 0 to 255 for each color. */
+      }
+
+      /* Color by HSLA (Hue, Saturation, Lightness, Alpha transparency) */
+      #john {
+        color: hsla(120, 100%, 50%, 0.5);
+        /* HSLA color is defined by hue (angle: 0-360°), saturation (0%-100%), 
+           lightness (0%-100%), and alpha transparency (0 = transparent, 1 = opaque). */
+      }
+
+      /* Color by HSL (Hue, Saturation, Lightness) */
+      #sara {
+        color: hsl(240, 100%, 50%);
+        /* HSL defines colors with Hue (0-360°), Saturation (0%-100%), and Lightness (0%-100%).
+        H== 0-> red, 120->green, 240->blue
+           In this case, 240° is a shade of blue. */
+      }
+
+      /* Color by Hex with Alpha (RGBA using Hex) */
+      #osman {
+        color: #ff634780;
+        /* Hex with alpha uses 8 characters (Hex + Alpha) for RGBA equivalent:
+           #ff6347 represents the RGB, and 80 is the alpha (128 in decimal, 50% opacity). */
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <h4>CSS Colors</h4>
-    <p id="ahnaf">Ahnaf is 5 years old</p>
-    <p id="arwa">Arwa is 3 years old</p>
-    <p id="ayash">Ayash is 7 months old</p>
-</body>
 
+    <!-- Color examples with detailed explanations -->
+    <p id="ahnaf">Ahnaf is 5 years old (using color by name)</p>
+    <p id="arwa">Arwa is 3 years old (using RGBA color with transparency)</p>
+    <p id="ayash">Ayash is 7 months old (using color by hexadecimal code)</p>
+    <p id="nashit">Nashit is learning CSS (using RGB color model)</p>
+    <p id="john">
+      John loves nature (using HSLA color model with transparency)
+    </p>
+    <p id="sara">Sara loves the ocean (using HSL color model)</p>
+    <p id="osman">Osman is coding (using Hex with Alpha transparency)</p>
+
+    <!-- Explanation of color models -->
+    <h5>Understanding Color Models</h5>
+    <ul>
+      <li>
+        <strong>Color by Name:</strong> You can use predefined color names such
+        as "red", "blue", etc.
+      </li>
+      <li>
+        <strong>Hexadecimal (Hex):</strong> A six-character string starting with
+        "#" (e.g., #ff6347), where the first two characters represent red, the
+        next two represent green, and the last two represent blue.
+      </li>
+      <li>
+        <strong>RGB:</strong> Uses a combination of Red, Green, and Blue, with
+        values ranging from 0 to 255 (e.g., rgb(255, 0, 0) for red).
+      </li>
+      <li>
+        <strong>RGBA:</strong> Like RGB but includes an alpha channel for
+        transparency (e.g., rgba(255, 0, 0, 0.5) is a semi-transparent red).
+      </li>
+      <li>
+        <strong>HSL:</strong> Defines colors by Hue (0°-360°), Saturation
+        (0%-100%), and Lightness (0%-100%) (e.g., hsl(120, 100%, 50%) for
+        green).
+      </li>
+      <li>
+        <strong>HSLA:</strong> Like HSL but includes an alpha channel for
+        transparency (e.g., hsla(120, 100%, 50%, 0.5) is a semi-transparent
+        green).
+      </li>
+      <li>
+        <strong>Hex with Alpha:</strong> A hexadecimal code with an 8-character
+        format that includes alpha transparency (e.g., #ff634780). The last two
+        characters represent alpha (e.g., 80 = 50% opacity).
+      </li>
+    </ul>
+  </body>
 </html>

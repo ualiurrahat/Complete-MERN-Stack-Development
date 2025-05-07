@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>How To Add Styling In CSS</title>
 
+    <!-- internal CSS: write CSS using the <style> tag inside the <head> tag  -->
     <style>
-        p {
+      p {
+        color: darkgoldenrod;
+        background-color: rgb(14, 235, 131);
+      }
 
-            color: darkgoldenrod;
-            background-color: rgb(14, 235, 131);
+      /* CSS always prefers last written or updated styles */
+      /* the down written styles take over above written style  */
+      p {
+        color: white;
+        background-color: black;
+      }
 
+      #redbg {
+        background-color: red;
+      }
 
-        }
-
-        /* CSS always prefers last written or updated styles */
-        /* the down written styles take over above written style  */
-        p {
-            color: white;
-            background-color: black;
-        }
-
-        /* adding !important makes the style more powerful than the updated css style code  */
-        /* ex: color: magenta !important;  */
-        /* using !important is a bad practice  */
+      /* adding !important makes the style more powerful than the updated css style code  */
+      /* ex: color: magenta !important;  */
+      /* using !important is a bad practice  */
     </style>
     <!-- external css  -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 
     <!-- the most updated written CSS is now the external CSS  -->
-    <!-- so the changes happened in the design  -->
-</head>
+    <!-- the same elements that are styled using <style> and external css
+        will have styling property taken from external css file.
+        cause stylesheet is wriiten here at the last and will be loaded  -->
+  </head>
 
-<body>
-
+  <body>
     <h1>Inline, Internal, External CSS</h1>
     <!-- inline CSS -->
-    <p style="color: cornflowerblue; background-color: cornsilk;">This is done by inline CSS</p>
+    <p style="color: cornflowerblue; background-color: cornsilk">
+      This is done by inline CSS
+    </p>
 
     <!-- internal CSS  -->
     <p>this is internal CSS</p>
 
     <!-- hence, inline CSS is powerful than internal CSS -->
 
-    <p id="redbg">This is internal CSS with redbg id </p>
+    <p id="redbg">This is internal CSS with redbg id</p>
     <!-- it is taking second styles from the style tag as we did not write particular design for redbg id  -->
-</body>
-
+  </body>
 </html>
