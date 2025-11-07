@@ -1,0 +1,217 @@
+/* universal selector  */
+* {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* banner section styling  */
+.banner {
+    height: 800px;
+    background-color: #C2C6C7;
+    background-image: url("../images/banner/banner2.png");
+    text-align: right;
+
+}
+
+.banner-btn {
+    color: #FFFFFF;
+    background-color: #f15b22;
+    border: 0;
+    height: 64px;
+    padding: 25px 32px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-right: 230px;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 60px;
+    color: #151414;
+    margin-bottom: 24px;
+    padding-top: 216px;
+    padding-left: 845px;
+    padding-right: 230px;
+
+
+
+}
+
+.banner-description {
+    color: #444343;
+    margin-bottom: 32px;
+    padding-left: 870px;
+    padding-right: 230px;
+
+}
+
+/* failure section styles */
+.failure {
+    margin-top: 210px;
+    margin-left: 250px;
+    margin-bottom: 50px;
+    margin-right: 270px;
+    display: flex;
+    gap: 87px;
+    text-align: left;
+
+}
+
+.failure .title {
+    color: #151414;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.failure .description {
+    color: #444343;
+    margin-bottom: 16px;
+}
+
+.failure .points {
+    color: #444343;
+    margin-bottom: 8px;
+}
+
+.failure-content {
+    margin-top: 200px;
+}
+
+/* planning section styling  */
+.planning {
+    margin: 0 220px 120px 220px;
+    text-align: center;
+}
+
+.planning-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.plan-container {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+
+}
+
+.plan-title {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.plan-description {
+    font-weight: 500;
+    font-size: 25px;
+    color: #737272;
+}
+
+/* gradient section */
+.gradient {
+    width: 1140px;
+    height: 300px;
+    margin: 0px 220px 130px;
+    background-image: linear-gradient(90deg, #F15B22 0%, rgba(241, 91, 34, 0) 100%), url('../images/watch.png');
+    border-radius: 8px;
+}
+
+.gradient-title {
+    font-weight: 700;
+    font-size: 40px;
+    color: #FFFFFF;
+    padding-right: 600px;
+    padding-left: 60px;
+    padding-top: 60px;
+}
+
+.btn-call {
+    font-weight: 600;
+    font-size: 20px;
+    color: #F15B22;
+    text-align: center;
+    border: 0;
+    height: 64px;
+    margin-top: 24px;
+    margin-left: 60px;
+    padding: 20px 35px;
+    border-radius: 5px;
+}
+
+/* footer section styles */
+.footer {
+    background-color: #151414;
+    height: 550px;
+}
+
+.footer-container {
+    display: flex;
+    gap: 330px;
+
+}
+
+.footer-info {
+    padding-top: 130px;
+    padding-left: 230px;
+}
+
+.footer-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #F8F8F8;
+    margin-bottom: 16px;
+}
+
+.footer-description {
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.footer-contact {
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.footer-form {
+    padding-top: 130px;
+    padding-right: 230px;
+}
+
+.footer-form .title {
+    font-weight: 600;
+    font-size: 25px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+
+}
+
+.form {
+    margin-bottom: 10px;
+    color: #f8f8f8;
+}
+
+.footer-form input {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    background-color: #151414;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.footer a {
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+.btn-subscribe {
+    height: 64px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #F15B22;
+    padding: 20px 36px;
+    border-radius: 5px;
+}

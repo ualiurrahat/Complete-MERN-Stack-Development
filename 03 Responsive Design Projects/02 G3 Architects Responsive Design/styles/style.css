@@ -1,0 +1,512 @@
+/*----------- 
+    fonts
+-------------  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&family=Work+Sans:wght@400;500;700&display=swap');
+
+
+/* universal selector  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* ----------------
+    Common Styles
+-------------------*/
+.container {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.btn-primary {
+    background: #FF900E;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 21px 24px 20px 25px;
+    border: none;
+}
+
+header {
+    background: rgba(255, 144, 14, 0.1);
+}
+
+/*---------------------------
+    header section styles
+-----------------------------*/
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.brand-name {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    /* margin-top: 50px;
+    margin-left: 227px; */
+    /* from figma  */
+    /* text-align: center; */
+}
+
+.navbar ul {
+    display: flex;
+    /* margin-top: 63px;
+    margin-right: 241px; */
+    gap: 35px;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #424242;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+    /* margin-left: 20px; */
+    /* from figma */
+    /* text-align: center; */
+}
+
+.banner-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50vh;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 64px;
+    color: #131313;
+
+}
+
+.banner-description {
+    color: #727272;
+    max-width: 860px;
+
+    /* text-align: center; */
+}
+
+.banner-btn {
+    height: 64px;
+    margin-top: 33px;
+}
+
+.banner-image {
+    padding-bottom: 40px;
+}
+
+.banner-image img {
+    /* border-radius: 8px;
+    margin: 50px 240px 45px 240px; */
+    width: 100%;
+}
+
+/*------------------------
+    team section styles
+ -------------------------  */
+.team-container {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 73px;
+
+}
+
+.team-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 24px;
+    column-gap: 24px;
+
+}
+.team-image img {
+    width: 100%;
+}
+
+.team-title {
+    font-weight: 500;
+    font-size: 45px;
+    margin-bottom: 24px;
+}
+
+.team-title #word1 {
+    color: #727272;
+    font-weight: 500;
+}
+
+.team-title #word2 {
+    font-weight: 700;
+    color: #131313;
+}
+
+.team-title #word3 {
+    color: #FF900E;
+    font-weight: 700;
+}
+
+.team-description {
+    color: #727272;
+    margin-bottom: 32px;
+}
+
+.team-btn {
+    height: 70px;
+    text-align: left;
+}
+
+/* feature-section styles */
+.feature-container {
+    display: flex;
+    gap: 54px;
+    margin-top: 100px;
+}
+
+.feature-info {
+    width: 50%;
+}
+
+.feature-about-title-container {
+    border-left: 5px solid orange
+}
+
+.feature-about-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-bottom: 24px;
+    padding-left: 20px;
+}
+
+.feature-about-description {
+    color: #727272;
+    margin-bottom: 30px;
+}
+
+.features {
+    padding: 20px;
+}
+
+.feature {
+    padding: 20px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.16);
+}
+
+.feature-title {
+    color: #131313;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.feature-description {
+    color: #727272;
+    margin-top: 10px;
+}
+
+.feature-image {
+    width: 50%;
+}
+
+.feature-image img {
+    width: 100%;
+}
+
+.btn-large {
+    height: 200px;
+    position: relative;
+    bottom: 150px;
+    right: 70px;
+}
+
+.btn-large span {
+    font-weight: 700;
+    font-size: 65px;
+    padding: 25px;
+}
+
+/*--------------------------
+    facts section styles
+----------------------- */
+.fact-about-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-bottom: 24px;
+}
+
+.fact-about-description {
+    color: #727272;
+    width: 50%;
+    margin-bottom: 100px;
+}
+
+.facts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.fact {
+    /* margin-top: 100px; */
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    /* padding: 45px 36px 60px 35px; */
+    text-align: center;
+    transition: width 3s ease-in 2s, height 3s linear 2s, transform 2s;
+    padding: 30px 40px;
+    margin-top: 10px;
+
+}
+
+/* transition and animation effect  */
+.fact:hover {
+    background-color: lightblue;
+    transform: scale(1.2) rotate(20deg);
+
+}
+
+.fact-image img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+.fact-number {
+    font-weight: 600;
+    font-size: 45px;
+    color: #424242;
+    margin-bottom: 5px;
+}
+
+.fact-title {
+    color: #727272;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/*---------------------------
+    Sponsor Section Styles
+-----------------------------*/
+.sponsor-container {
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.sponsor-info {
+    text-align: center;
+}
+
+.sponsor-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-bottom: 24px;
+}
+
+.sponsor-description {
+    color: #727272;
+    margin-bottom: 50px;
+}
+
+.sponsor-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    mix-blend-mode: luminosity;
+    background-color: white;
+    margin-top: 50px;
+}
+
+.sponsor-img {
+    margin: 20px;
+}
+
+.sponsor-images img {
+    mix-blend-mode: luminosity;
+}
+
+/* --------------------------
+    bonsu section styles
+----------------------------*/
+.bonus-container {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 100px;
+    border: 2px solid gray;
+    padding: 50px;
+    border-radius: 6px;
+}
+
+.bonus-info,
+.bonus-image {
+    width: 50%;
+}
+
+.bonus-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-bottom: 24px;
+}
+
+.bonus-description {
+    color: #727272;
+    margin-bottom: 50px;
+
+}
+
+.bonus-image img {
+    width: 100%;
+}
+
+.bonus-container h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+
+}
+
+.service li {
+    list-style: none;
+}
+
+.skills {
+    color: chartreuse;
+}
+
+.bonus-image {
+    width: 50%;
+}
+
+/*--------------------
+    footer styles
+---------------------*/
+footer {
+
+    background: #FFF4E7;
+    border-radius: 8px;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer-title {
+    font-weight: 400;
+    font-size: 20px;
+    color: #424242;
+    text-align: center;
+    padding: 20px;
+}
+
+/*--------------------------
+Responsive Styles
+-------------------------- */
+
+/* for mobile devices */
+@media screen and (max-width:576px) {
+    .container {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .navigation {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .brand-name {
+        margin-bottom: 15px;
+        font-size: 30px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 100px;
+    }
+
+    .banner-info {
+        text-align: justify;
+    }
+
+    .banner-title {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .team-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .team-images {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    .feature-container {
+        flex-direction: column;
+    }
+
+    .btn-large {
+        height: 200px;
+        position: initial;
+        width: 100%;
+    }
+
+    .feature-info,
+    .feature-image {
+        width: 100%;
+    }
+
+    .btn-large span {
+        font-weight: 700;
+        font-size: 35px;
+        padding: 15px;
+    }
+
+    .facts {
+        justify-content: center;
+    }
+
+    .fact-about-title {
+        margin-top: 20px;
+    }
+
+    .fact-about-description {
+        width: 100%;
+    }
+
+    .bonus-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .bonus-info,
+    .bonus-image {
+        width: 100%;
+    }
+
+    .hide {
+        display: none;
+    }
+
+
+}
