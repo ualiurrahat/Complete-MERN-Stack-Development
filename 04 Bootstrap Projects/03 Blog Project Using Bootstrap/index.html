@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap css link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap icon link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- CSS stylesheet link  -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Blog Website Using Bootstrap</title>
+  </head>
+  <body>
+    <!-- Navigation  -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#Service"
+                >Service</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#Portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#Team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#Contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section  -->
+    <section class="hero__section">
+      <div class="container">
+        <div class="text-center">
+          <h1 class="section__heading">Welcome To Our Studio!</h1>
+          <p class="section__subHeading">It's Nice To Meet You</p>
+          <a href="#" class="btn btn-custom">Tell Me More</a>
+        </div>
+      </div>
+    </section>
+    <!-- Service Section  -->
+    <section id="Service" class="service__section">
+      <div class="container">
+        <div class="text-center">
+          <h1 class="section__heading">Services</h1>
+          <p class="section__subHeading">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
+            maiores ea pariatur repellat velit facilis iste assumenda deserunt
+            eligendi mollitia!
+          </p>
+        </div>
+
+        <div class="row text-center mt-5">
+          <div class="col-md-4">
+            <div class="service__box">
+              <div class="d-flex justify-content-center align-items-center">
+                <span class="service__icon">
+                  <i class="bi bi-cart-check-fill"></i>
+                </span>
+              </div>
+              <h2>E-Commerce</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa,
+                earum!
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service__box">
+              <div class="d-flex justify-content-center align-items-center">
+                <span class="service__icon">
+                  <i class="bi bi-laptop"></i>
+                </span>
+              </div>
+              <h2>Responsive Design</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa,
+                earum!
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service__box">
+              <div class="d-flex justify-content-center align-items-center">
+                <span class="service__icon">
+                  <i class="bi bi-unlock-fill"></i>
+                </span>
+              </div>
+              <h2>Web Security</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa,
+                earum!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section  -->
+    <section id="Portfolio" class="portfolio__section">
+      <div class="container">
+        <div class="text-center">
+          <h1 class="section__heading">Portfolio</h1>
+          <p class="section__subHeading">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
+            maiores ea pariatur repellat velit facilis iste assumenda deserunt
+            eligendi mollitia!
+          </p>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="portfolio__item shadow">
+              <a href="#"
+                ><img class="img-fluid" src="./images/portfolio_1.png" alt=""
+              /></a>
+              <div class="portfolio_content">
+                <h2>Smart Electros</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aliquid, nostrum!
+                </p>
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="portfolio__item shadow">
+              <a href="#"
+                ><img class="img-fluid" src="./images/portfolio_2.png" alt=""
+              /></a>
+              <div class="portfolio_content">
+                <h2>Shoe Hub</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aliquid, nostrum!
+                </p>
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="portfolio__item shadow">
+              <a href="#"
+                ><img class="img-fluid" src="./images/portfolio_3.png" alt=""
+              /></a>
+              <div class="portfolio_content">
+                <h2>Tesla Corporaton</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aliquid, nostrum!
+                </p>
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="portfolio__item shadow">
+              <a href="#"
+                ><img class="img-fluid" src="./images/portfolio_4.png" alt=""
+              /></a>
+              <div class="portfolio_content">
+                <h2>Linux World</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aliquid, nostrum!
+                </p>
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="portfolio__item shadow">
+              <a href="#"
+                ><img class="img-fluid" src="./images/portfolio_5.png" alt=""
+              /></a>
+              <div class="portfolio_content">
+                <h2>Apple Macbook</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aliquid, nostrum!
+                </p>
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="portfolio__item shadow">
+              <a href="#"
+                ><img class="img-fluid" src="./images/portfolio_6.png" alt=""
+              /></a>
+              <div class="portfolio_content">
+                <h2>Royal Stag</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aliquid, nostrum!
+                </p>
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section  -->
+    <section id="About" class="about_section">
+      <div class="container">
+        <div class="text-center">
+          <h1 class="section__heading">About</h1>
+          <p class="section__subHeading">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsum
+            nam perspiciatis, asperiores mollitia iure.
+          </p>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <div class="about__content">
+              <h2>About Us</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Consequuntur reiciendis molestiae error beatae voluptas, rerum
+                unde recusandae, doloribus minima, culpa tempore doloremque!
+                Atque est, molestias ea autem error hic iusto neque animi porro
+                consectetur ullam, voluptas optio. Delectus aperiam cumque, quam
+                magni laborum voluptas at quaerat nam dicta ratione vel.
+              </p>
+              <ul>
+                <li>
+                  <span class="about__icon">
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                  </span>
+                  Get started by including Bootstrap's production-ready CSS.
+                </li>
+
+                <li>
+                  <span class="about__icon">
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                  </span>
+                  Javascript bundle including Popper for positioning dropdown.
+                </li>
+
+                <li>
+                  <span class="about__icon">
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                  </span>
+                  You can also include Popper and our JS separately.
+                </li>
+
+                <li>
+                  <span class="about__icon">
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                  </span>
+                  Learn Full Stack Web Development with us from scratch.
+                </li>
+
+                <li>
+                  <span class="about__icon">
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                  </span>
+                  An online collaboration of amazing minds for 8 months.
+                </li>
+
+                <li>
+                  <span class="about__icon">
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                  </span>
+                  The Universe always falls in love with a stubborn mind.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="img__content">
+              <img src="./images/about.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section  -->
+    <section id="Team" class="team__section">
+      <div class="container">
+        <div class="text-center">
+          <h1 class="section__heading">Our Amazing Team</h1>
+          <p class="section__subHeading">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere nam
+            eaque quidem consequuntur mollitia eveniet.
+          </p>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-4 mb-4">
+            <div class="team__member text-center">
+              <div class="team__img mx-auto">
+                <img class="img-fluid" src="./images/team_1.png" alt="" />
+              </div>
+
+              <div>
+                <h2>Les Grosnan</h2>
+                <p>Lead Architect</p>
+              </div>
+              <div class="team__social">
+                <a href="#">
+                  <i class="bi bi-facebook"></i>
+                </a>
+
+                <a href="#">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+
+                <a href="#">
+                  <i class="bi bi-twitter"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="team__member text-center">
+              <div class="team__img mx-auto">
+                <img class="img-fluid" src="./images/team_2.png" alt="" />
+              </div>
+
+              <div>
+                <h2>Maria Queen</h2>
+                <p>System Designer</p>
+              </div>
+              <div class="team__social">
+                <a href="#">
+                  <i class="bi bi-facebook"></i>
+                </a>
+
+                <a href="#">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+
+                <a href="#">
+                  <i class="bi bi-twitter"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="team__member text-center">
+              <div class="team__img mx-auto">
+                <img class="img-fluid" src="./images/team_3.png" alt="" />
+              </div>
+
+              <div>
+                <h2>Victor Salva</h2>
+                <p>Business Analyst</p>
+              </div>
+              <div class="team__social">
+                <a href="#">
+                  <i class="bi bi-facebook"></i>
+                </a>
+
+                <a href="#">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+
+                <a href="#">
+                  <i class="bi bi-twitter"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section  -->
+
+    <section id="Contact" class="contact-section py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2>Contact Us</h2>
+          <p class="text-muted">
+            Feel free to reach out by filling the form below.
+          </p>
+        </div>
+        <form id="contactForm" class="contact-form">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="col-md-6 mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="subject"
+              placeholder="Subject"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <textarea
+              class="form-control"
+              id="message"
+              rows="5"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary" id="submitBtn">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section  -->
+    <footer>
+      <div class="container text-center">
+        <h3>This is our Footer</h3>
+        <p>Copyright &#174; My Website 2025</p>
+      </div>
+    </footer>
+    <!-- bootstrap js link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+/* text color  */
+.text-color-1 {
+    color: rgb(26, 44, 148);
+}
+
+.text-color-2 {
+    color: rgb(73, 198, 175);
+}
+
+/* banner image in carousel  */
+.banner-img-1 {
+    background-image: url("../image/carousel/1.jpg");
+    height: 100vh;
+}
+
+.banner-img-2 {
+    background-image: url("../image/carousel/2.jpg");
+    height: 100vh;
+}
+
+.banner-img-3 {
+    background-image: url("../image/carousel/3.jpg");
+    height: 100vh;
+}
+
+/* button background colors  */
+.btn-bg-1 {
+    background-color: rgb(26, 44, 148);
+}
+
+.btn-bg-2 {
+    background-color: rgb(73, 198, 175);
+    ;
+}
+/* call to action button styles  */
+.btn-outline-white{
+    color:white;
+    border-color: white;
+}
+.btn-outline-white:hover{
+    background-color:gray;
+}
+
+/* client logo  styles  */
+.client-img{
+    width: 170px;
+}
+
+/* call to action section styles  */
+.call-to-action{
+    background-color: rgb(26, 44, 148);;
+}
+
+/* footer styles  */
+footer{
+    background-color: rgb(26, 44, 148);
+   
+}
